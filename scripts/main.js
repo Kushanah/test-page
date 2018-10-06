@@ -39,7 +39,7 @@ function setUserName() {
 function updateHeading()
 {
 	if(!localStorage.getItem('name')) {
-		return setUserName();
+		myName = "not set";
 	} else {
 	  var storedName = localStorage.getItem('name');
 	  myHeading.textContent = browserName + ' is cool, ' + storedName;
